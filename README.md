@@ -64,4 +64,4 @@ The script creates an `export` folder under the project directory (or the folder
 
 To run the script, open the script editor in QuPath under `Automate -> Script editor` and open the script. To include default imports for every script, select the option under `Run -> Include default imports`. One can select if they want to run the script on one image or run the script on the entire project.
 
-**Note:** Errors might occur for exporting downsample rendered images. The reason is unknown yet since the script works on some computers but not others. If errors arise, block or remove code from line 83 to 101.
+**Note:** Errors might occur for exporting downsample rendered images. If errors arise, remove `lineThickness` on line 95. If the error persists, block or remove code from line 83 to 101.
