@@ -1,6 +1,5 @@
 import qupath.lib.gui.images.servers.RenderedImageServer
 import qupath.lib.gui.viewer.overlays.HierarchyOverlay
-//annotations = getAnnotationObjects().findAll{it.getPathClass()}
 
 def imageData = getCurrentImageData()
 
@@ -27,7 +26,7 @@ double downsample = 1
 def og_label = new LabeledImageServer.Builder(imageData)
     .backgroundLabel(0, ColorTools.BLACK) //
     .downsample(downsample) // server resolution
-    .addLabel('Edge', 1) // output labels
+    .addLabel('Organoid', 1) // output labels
     .lineThickness(3)
     .multichannelOutput(false)
     .build()
