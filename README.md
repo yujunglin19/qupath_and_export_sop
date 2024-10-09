@@ -1,1 +1,0 @@
-# qupath_and_export_sop
